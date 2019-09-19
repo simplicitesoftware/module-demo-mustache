@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.simplicite.modules</groupId>
+  <version>4.0-SNAPSHOT</version>
+  <artifactId>DemoMustache</artifactId>
+  <name>DemoMustache</name>
+  <description>Simplicite module: DemoMustache</description>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <simplicite.url>https://dev40.dev.simplicite.io</simplicite.url>
+    <simplicite.version>4.0.P25a-SNAPSHOT</simplicite.version>
+    <maven.compiler.source>12</maven.compiler.source>
+    <maven.compiler.target>12</maven.compiler.target>
+    <sonar.sources>src,resources</sonar.sources>
+    <sonar.exclusions>**.min.js,**.min.css</sonar.exclusions>
+    <sonar.coverage.exclusions>resources/**.js,src/**.java</sonar.coverage.exclusions>
+  </properties>
+  <packaging>jar</packaging>
+  <url>${simplicite.url}</url>
+  <build>
+    <sourceDirectory>${project.basedir}/src</sourceDirectory>
+    <testSourceDirectory>${project.basedir}/test/src</testSourceDirectory>
+    <resources>
+      <resource><directory>${project.basedir}/resources</directory></resource>
+    </resources>
+    <testResources>
+      <testResource><directory>${project.basedir}/test/resources</directory></testResource>
+    </testResources>
+  </build>
+  <repositories>
+    <repository>
+      <id>simplicite</id>
+      <url>${simplicite.url}/maven</url>
+      <releases><enabled>true</enabled></releases>
+      <snapshots><enabled>true</enabled></snapshots>
+    </repository>
+  </repositories>
+  <scm>
+    <url>${simplicite.url}/git/DemoMustache</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>com.simplicite</groupId>
+      <artifactId>simplicite-api</artifactId>
+      <version>${simplicite.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.simplicite</groupId>
+      <artifactId>simplicite-api</artifactId>
+      <version>${simplicite.version}</version>
+      <classifier>javadoc</classifier>
+    </dependency>
+  </dependencies>
+</project>
