@@ -21,7 +21,7 @@ public class demo extends ExternalObject {
 		try {
 			boolean pub = isPublic();
 			setDecoration(!pub);
-			String render = getName() + ".render('" + HTMLTool.getRoot() + "', '" + HTMLTool.getResourceImageURL(this, "BANNER") + "', " + pub + ", " + getGrant().isInApp() + ");";
+			String render = getName() + ".render(" + params.toJSONObject().put("bannerURL", HTMLTool.getResourceImageURL(this, "BANNER")).put("pub", pub).toString() + ");";
 			if (pub) { // Public page version (standalone Bootstrap page)
 				BootstrapWebPage wp = new BootstrapWebPage(params.getRoot(), getDisplay(), false);
 				wp.setFavicon(HTMLTool.getResourceIconURL(this, "FAVICON"));

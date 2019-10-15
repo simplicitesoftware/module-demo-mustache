@@ -3,25 +3,21 @@ var demo = typeof demo !== 'undefined' ? demo : (function($) {
 
 	/**
 	 * Render
-	 * @param root Context path
-	 * @param banner Banner URL
-	 * @param pub Public?
+	 * @param params Parameters
 	 * @function
 	 */
-	function render(root, banner, pub, inapp) {
-		//alert("inapp="+inapp);
-		
+	function render(params) {
 		try {
 			if (typeof Mustache === 'undefined') throw 'Mustache not available';
 			var div = $('#demo');
-			if (!pub) div.css('min-height', '1000px');
+			if (!params.pub) div.css('min-height', '1000px');
 			
-			app = app || (pub
-				? new Simplicite.Ajax(root, 'api', 'website', 'simplicite')
+			app = app || (params.pub
+				? new Simplicite.Ajax(params.root, 'api', 'website', 'simplicite')
 				: Simplicite.Application); // Internal
 	
 			prd = prd || app.getBusinessObject('DemoProduct');
-			prd.bannerURL = prd.bannerURL || banner; // Image banner URL
+			prd.bannerURL = prd.bannerURL || params.bannerURL; // Image banner URL
 			prd.toFixed = prd.toFixed || function() { return function(n, r) { return parseFloat(r(n)).toFixed(2); } }; // Rendering function for decimal
 
 			prd.search(function() {
