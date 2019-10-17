@@ -143,6 +143,24 @@ Settings from [GitHub](https://github.com/simplicitesoftware/module-demo-mustach
 	<data>
 		<res_object>
 			<object>
+				<name>Disposition</name>
+				<data>
+					<dis_code>default</dis_code>
+				</data>
+			</object>
+		</res_object>
+		<res_type>ICO</res_type>
+		<res_lang>ANY</res_lang>
+		<res_code>mustache</res_code>
+		<res_cached>0</res_cached>
+		<res_file/>
+		<res_file_compiled/>
+		<res_image>resources/Disposition/default/mustache.png</res_image>
+		<row_module_id.mdl_name>DemoMustache</row_module_id.mdl_name>
+	</data>
+	<data>
+		<res_object>
+			<object>
 				<name>ObjectExternal</name>
 				<data>
 					<obe_name>demo</obe_name>
