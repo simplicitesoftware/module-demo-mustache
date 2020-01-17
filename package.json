@@ -1,10 +1,10 @@
 {
-    "date": "Thu Sep 19 17:35:58 CEST 2019",
+    "date": "Fri Jan 17 18:02:48 CET 2020",
     "name": "DemoMustache",
     "format": "xml",
-    "description": "`DemoVueMustache`module: **Mustache** templating frontend demo.\n\nNote that this modules is based on the `Demo` module.\n\nSettings from [GitHub](https://github.com/simplicitesoftware/module-demo-mustache):\n\n```json\n{\n\t\"type\": \"git\",\n\t\"origin\": { \"uri\": \"https://github.com/simplicitesoftware/module-demo-mustache.git\" }\n}\n```",
+    "description": "### Introduction\n\nThis module contains a simple web frontend example for the demo **order management** application\nbased on **Mustache** templating.\n\n### Prerequisites\n\nThe `Demo` module **must** be installed and configured before importing this addon module.\n\n### Import\n\nTo import this module:\n\n- Create a module named `DemoMustache`\n- Set the settings as:\n\n```json\n{\n\t\"type\": \"git\",\n\t\"origin\": {\n\t\t\"uri\": \"https://github.com/simplicitesoftware/module-demo-mustache.git\"\n\t}\n}\n```\n\n- Click on the _Import module_ button\n",
     "files": ["DemoMustache.xml"],
-    "repository": {},
+    "repository": {"origin": {"uri": "https://github.com/simplicitesoftware/module-demo-mustache.git"}},
     "version": "4.0",
     "dependencies": [{"Simplicite": "4.0"}]
 }

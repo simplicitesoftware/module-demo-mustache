@@ -11,18 +11,33 @@
 `DemoMustache` module definition
 ================================
 
-`DemoVueMustache`module: **Mustache** templating frontend demo.
+### Introduction
 
-Note that this modules is based on the `Demo` module.
+This module contains a simple web frontend example for the demo **order management** application
+based on **Mustache** templating.
 
-Settings from [GitHub](https://github.com/simplicitesoftware/module-demo-mustache):
+### Prerequisites
+
+The `Demo` module **must** be installed and configured before importing this addon module.
+
+### Import
+
+To import this module:
+
+- Create a module named `DemoMustache`
+- Set the settings as:
 
 ```json
 {
 	"type": "git",
-	"origin": { "uri": "https://github.com/simplicitesoftware/module-demo-mustache.git" }
+	"origin": {
+		"uri": "https://github.com/simplicitesoftware/module-demo-mustache.git"
+	}
 }
 ```
+
+- Click on the _Import module_ button
+
 
 `demo` external object definition
 ---------------------------------

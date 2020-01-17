@@ -7,20 +7,40 @@
 		<mdl_name>DemoMustache</mdl_name>
 		<mdl_version>4.0</mdl_version>
 		<mdl_prefix/>
-		<mdl_url><![CDATA[https://www.simplicite.io/resources/modules/demo-mustache-4.0.xml]]></mdl_url>
-		<mdl_lastupd>2019-09-19 17:35:58</mdl_lastupd>
-		<mdl_comment><![CDATA[`DemoVueMustache`module: **Mustache** templating frontend demo.
+		<mdl_url><![CDATA[{
+	"type": "git",
+	"origin": {
+		"uri": "https://github.com/simplicitesoftware/module-demo-mustache.git"
+	}
+}]]></mdl_url>
+		<mdl_lastupd>2020-01-17 18:02:48</mdl_lastupd>
+		<mdl_comment><![CDATA[### Introduction
 
-Note that this modules is based on the `Demo` module.
+This module contains a simple web frontend example for the demo **order management** application
+based on **Mustache** templating.
 
-Settings from [GitHub](https://github.com/simplicitesoftware/module-demo-mustache):
+### Prerequisites
+
+The `Demo` module **must** be installed and configured before importing this addon module.
+
+### Import
+
+To import this module:
+
+- Create a module named `DemoMustache`
+- Set the settings as:
 
 ```json
 {
 	"type": "git",
-	"origin": { "uri": "https://github.com/simplicitesoftware/module-demo-mustache.git" }
+	"origin": {
+		"uri": "https://github.com/simplicitesoftware/module-demo-mustache.git"
+	}
 }
-```]]></mdl_comment>
+```
+
+- Click on the _Import module_ button
+]]></mdl_comment>
 	</data>
 </object>
 <object>
@@ -156,6 +176,42 @@ Settings from [GitHub](https://github.com/simplicitesoftware/module-demo-mustach
 		<res_file/>
 		<res_file_compiled/>
 		<res_image>resources/Disposition/default/mustache.png</res_image>
+		<row_module_id.mdl_name>DemoMustache</row_module_id.mdl_name>
+	</data>
+	<data>
+		<res_object>
+			<object>
+				<name>Disposition</name>
+				<data>
+					<dis_code>default</dis_code>
+				</data>
+			</object>
+		</res_object>
+		<res_type>IMG</res_type>
+		<res_lang>ANY</res_lang>
+		<res_code>demomustache-module</res_code>
+		<res_cached>0</res_cached>
+		<res_file/>
+		<res_file_compiled/>
+		<res_image>resources/Disposition/default/demomustache-module.png</res_image>
+		<row_module_id.mdl_name>DemoMustache</row_module_id.mdl_name>
+	</data>
+	<data>
+		<res_object>
+			<object>
+				<name>Disposition</name>
+				<data>
+					<dis_code>default</dis_code>
+				</data>
+			</object>
+		</res_object>
+		<res_type>IMG</res_type>
+		<res_lang>ANY</res_lang>
+		<res_code>demomustache-module-full</res_code>
+		<res_cached>0</res_cached>
+		<res_file/>
+		<res_file_compiled/>
+		<res_image>resources/Disposition/default/demomustache-module-full.png</res_image>
 		<row_module_id.mdl_name>DemoMustache</row_module_id.mdl_name>
 	</data>
 	<data>
