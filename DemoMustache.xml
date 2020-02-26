@@ -6,14 +6,14 @@
 	<data>
 		<mdl_name>DemoMustache</mdl_name>
 		<mdl_version>4.0</mdl_version>
-		<mdl_prefix/>
+		<mdl_prefix>demo</mdl_prefix>
 		<mdl_url><![CDATA[{
 	"type": "git",
 	"origin": {
 		"uri": "https://github.com/simplicitesoftware/module-demo-mustache.git"
 	}
 }]]></mdl_url>
-		<mdl_lastupd>2020-01-17 18:02:48</mdl_lastupd>
+		<mdl_lastupd>2020-02-26 18:39:45</mdl_lastupd>
 		<mdl_comment><![CDATA[### Introduction
 
 This module contains a simple web frontend example for the demo **order management** application
@@ -50,7 +50,7 @@ To import this module:
 		<shc_name>demo</shc_name>
 		<shc_url><![CDATA[[EXPR:HTMLPage.getPublicExternalObjectURL("demo")]]]></shc_url>
 		<shc_target>_blank</shc_target>
-		<shc_order>132</shc_order>
+		<shc_order>131</shc_order>
 		<shc_visible>1</shc_visible>
 		<shc_icon>fas/globe</shc_icon>
 		<shc_keys/>
@@ -152,7 +152,7 @@ To import this module:
 		<map_domain_id.obd_name>DemoDomain</map_domain_id.obd_name>
 		<map_object_id.obj_name>demo</map_object_id.obj_name>
 		<map_process_id.pcs_name/>
-		<map_order>71200</map_order>
+		<map_order>71100</map_order>
 		<map_ext>1</map_ext>
 		<row_module_id.mdl_name>DemoMustache</row_module_id.mdl_name>
 	</data>
