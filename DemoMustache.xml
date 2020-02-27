@@ -6,14 +6,14 @@
 	<data>
 		<mdl_name>DemoMustache</mdl_name>
 		<mdl_version>4.0</mdl_version>
-		<mdl_prefix>demo</mdl_prefix>
+		<mdl_prefix/>
 		<mdl_url><![CDATA[{
 	"type": "git",
 	"origin": {
 		"uri": "https://github.com/simplicitesoftware/module-demo-mustache.git"
 	}
 }]]></mdl_url>
-		<mdl_lastupd>2020-02-26 18:39:45</mdl_lastupd>
+		<mdl_lastupd>2020-02-27 11:20:20</mdl_lastupd>
 		<mdl_comment><![CDATA[### Introduction
 
 This module contains a simple web frontend example for the demo **order management** application
