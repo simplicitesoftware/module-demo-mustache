@@ -1,5 +1,5 @@
 {
-    "date": "Thu Feb 27 11:20:20 CET 2020",
+    "date": "Fri Feb 28 22:03:14 CET 2020",
     "name": "DemoMustache",
     "format": "xml",
     "description": "### Introduction\n\nThis module contains a simple web frontend example for the demo **order management** application\nbased on **Mustache** templating.\n\n### Prerequisites\n\nThe `Demo` module **must** be installed and configured before importing this addon module.\n\n### Import\n\nTo import this module:\n\n- Create a module named `DemoMustache`\n- Set the settings as:\n\n```json\n{\n\t\"type\": \"git\",\n\t\"origin\": {\n\t\t\"uri\": \"https://github.com/simplicitesoftware/module-demo-mustache.git\"\n\t}\n}\n```\n\n- Click on the _Import module_ button\n",
