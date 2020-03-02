@@ -52,7 +52,7 @@ To import this module:
 		<shc_target>_blank</shc_target>
 		<shc_order>131</shc_order>
 		<shc_visible>1</shc_visible>
-		<shc_icon>fas/globe</shc_icon>
+		<shc_icon>mustache</shc_icon>
 		<shc_keys/>
 		<row_module_id.mdl_name>DemoMustache</row_module_id.mdl_name>
 	</data>
@@ -152,7 +152,7 @@ To import this module:
 		<map_domain_id.obd_name>DemoDomain</map_domain_id.obd_name>
 		<map_object_id.obj_name>demo</map_object_id.obj_name>
 		<map_process_id.pcs_name/>
-		<map_order>71100</map_order>
+		<map_order>70930</map_order>
 		<map_ext>1</map_ext>
 		<row_module_id.mdl_name>DemoMustache</row_module_id.mdl_name>
 	</data>
