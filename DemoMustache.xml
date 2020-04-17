@@ -46,11 +46,20 @@ To import this module:
 	</data>
 </object>
 <object>
+	<name>ModuleLink</name>
+	<action>upsert</action>
+	<data>
+		<mdk_parent_id.mdl_name>Demo</mdk_parent_id.mdl_name>
+		<row_module_id.mdl_name>DemoMustache</row_module_id.mdl_name>
+		<mdk_cascad>R</mdk_cascad>
+	</data>
+</object>
+<object>
 	<name>ShortCut</name>
 	<action>upsert</action>
 	<data>
-		<shc_name>demo</shc_name>
-		<shc_url><![CDATA[[EXPR:HTMLPage.getPublicExternalObjectURL("demo")]]]></shc_url>
+		<shc_name>DemoMustacheFrontend</shc_name>
+		<shc_url><![CDATA[[EXPR:HTMLPage.getPublicExternalObjectURL("DemoMustacheFrontend")]]]></shc_url>
 		<shc_target>_blank</shc_target>
 		<shc_order>131</shc_order>
 		<shc_visible>1</shc_visible>
@@ -63,13 +72,13 @@ To import this module:
 	<name>ShortCutGroup</name>
 	<action>upsert</action>
 	<data>
-		<shg_shortcut_id.shc_name>demo</shg_shortcut_id.shc_name>
+		<shg_shortcut_id.shc_name>DemoMustacheFrontend</shg_shortcut_id.shc_name>
 		<shg_group_id.grp_name>DEMO_ADMIN</shg_group_id.grp_name>
 		<shg_activ>1</shg_activ>
 		<row_module_id.mdl_name>DemoMustache</row_module_id.mdl_name>
 	</data>
 	<data>
-		<shg_shortcut_id.shc_name>demo</shg_shortcut_id.shc_name>
+		<shg_shortcut_id.shc_name>DemoMustacheFrontend</shg_shortcut_id.shc_name>
 		<shg_group_id.grp_name>DEMO_USER</shg_group_id.grp_name>
 		<shg_activ>1</shg_activ>
 		<row_module_id.mdl_name>DemoMustache</row_module_id.mdl_name>
@@ -79,13 +88,13 @@ To import this module:
 	<name>ObjectExternal</name>
 	<action>upsert</action>
 	<data>
-		<obe_name>demo</obe_name>
+		<obe_name>DemoMustacheFrontend</obe_name>
 		<obe_type>E</obe_type>
 		<obe_url/>
 		<obe_comment><![CDATA[Simple demo frontend using **Mustache** templating]]></obe_comment>
 		<obe_help/>
 		<obe_class/>
-		<obe_script_id>src/com/simplicite/extobjects/DemoMustache/demo.java</obe_script_id>
+		<obe_script_id>src/com/simplicite/extobjects/DemoMustache/DemoMustacheFrontend.java</obe_script_id>
 		<obe_icon>mustache</obe_icon>
 		<row_module_id.mdl_name>DemoMustache</row_module_id.mdl_name>
 	</data>
@@ -94,9 +103,9 @@ To import this module:
 	<name>Function</name>
 	<action>upsert</action>
 	<data>
-		<fct_name>demo</fct_name>
+		<fct_name>DemoMustacheFrontend-E</fct_name>
 		<fct_object_id.obj_type>E</fct_object_id.obj_type>
-		<fct_object_id.obj_name>demo</fct_object_id.obj_name>
+		<fct_object_id.obj_name>DemoMustacheFrontend</fct_object_id.obj_name>
 		<fct_function>L</fct_function>
 		<fct_action_id.act_name/>
 		<fct_view_id.viw_name/>
@@ -108,9 +117,9 @@ To import this module:
 	<action>upsert</action>
 	<data>
 		<grt_group_id.grp_name>DEMO_ADMIN</grt_group_id.grp_name>
-		<grt_function_id.fct_name>demo</grt_function_id.fct_name>
+		<grt_function_id.fct_name>DemoMustacheFrontend-E</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>E</grt_function_id.fct_object_id.obj_type>
-		<grt_function_id.fct_object_id.obj_name>demo</grt_function_id.fct_object_id.obj_name>
+		<grt_function_id.fct_object_id.obj_name>DemoMustacheFrontend</grt_function_id.fct_object_id.obj_name>
 		<grt_function_id.fct_action_id.act_name/>
 		<grt_function_id.fct_function>L</grt_function_id.fct_function>
 		<grt_activ>1</grt_activ>
@@ -118,9 +127,9 @@ To import this module:
 	</data>
 	<data>
 		<grt_group_id.grp_name>DEMO_PUBLIC</grt_group_id.grp_name>
-		<grt_function_id.fct_name>demo</grt_function_id.fct_name>
+		<grt_function_id.fct_name>DemoMustacheFrontend-E</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>E</grt_function_id.fct_object_id.obj_type>
-		<grt_function_id.fct_object_id.obj_name>demo</grt_function_id.fct_object_id.obj_name>
+		<grt_function_id.fct_object_id.obj_name>DemoMustacheFrontend</grt_function_id.fct_object_id.obj_name>
 		<grt_function_id.fct_action_id.act_name/>
 		<grt_function_id.fct_function>L</grt_function_id.fct_function>
 		<grt_activ>1</grt_activ>
@@ -128,9 +137,9 @@ To import this module:
 	</data>
 	<data>
 		<grt_group_id.grp_name>DEMO_USER</grt_group_id.grp_name>
-		<grt_function_id.fct_name>demo</grt_function_id.fct_name>
+		<grt_function_id.fct_name>DemoMustacheFrontend-E</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>E</grt_function_id.fct_object_id.obj_type>
-		<grt_function_id.fct_object_id.obj_name>demo</grt_function_id.fct_object_id.obj_name>
+		<grt_function_id.fct_object_id.obj_name>DemoMustacheFrontend</grt_function_id.fct_object_id.obj_name>
 		<grt_function_id.fct_action_id.act_name/>
 		<grt_function_id.fct_function>L</grt_function_id.fct_function>
 		<grt_activ>1</grt_activ>
@@ -138,9 +147,9 @@ To import this module:
 	</data>
 	<data>
 		<grt_group_id.grp_name>DEMO_WEBSITE</grt_group_id.grp_name>
-		<grt_function_id.fct_name>demo</grt_function_id.fct_name>
+		<grt_function_id.fct_name>DemoMustacheFrontend-E</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>E</grt_function_id.fct_object_id.obj_type>
-		<grt_function_id.fct_object_id.obj_name>demo</grt_function_id.fct_object_id.obj_name>
+		<grt_function_id.fct_object_id.obj_name>DemoMustacheFrontend</grt_function_id.fct_object_id.obj_name>
 		<grt_function_id.fct_action_id.act_name/>
 		<grt_function_id.fct_function>L</grt_function_id.fct_function>
 		<grt_activ>1</grt_activ>
@@ -152,7 +161,7 @@ To import this module:
 	<action>upsert</action>
 	<data>
 		<map_domain_id.obd_name>DemoDomain</map_domain_id.obd_name>
-		<map_object_id.obj_name>demo</map_object_id.obj_name>
+		<map_object_id.obj_name>DemoMustacheFrontend</map_object_id.obj_name>
 		<map_process_id.pcs_name/>
 		<map_order>70930</map_order>
 		<map_ext>1</map_ext>
@@ -221,7 +230,7 @@ To import this module:
 			<object>
 				<name>ObjectExternal</name>
 				<data>
-					<obe_name>demo</obe_name>
+					<obe_name>DemoMustacheFrontend</obe_name>
 				</data>
 			</object>
 		</res_object>
@@ -229,8 +238,8 @@ To import this module:
 		<res_lang>ANY</res_lang>
 		<res_code>STYLES</res_code>
 		<res_cached>0</res_cached>
-		<res_file>resources/ObjectExternal/demo/STYLES.less</res_file>
-		<res_file_compiled>resources/ObjectExternal/demo/STYLES.min.css</res_file_compiled>
+		<res_file>resources/ObjectExternal/DemoMustacheFrontend/STYLES.less</res_file>
+		<res_file_compiled>resources/ObjectExternal/DemoMustacheFrontend/STYLES.min.css</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>DemoMustache</row_module_id.mdl_name>
 	</data>
@@ -239,7 +248,7 @@ To import this module:
 			<object>
 				<name>ObjectExternal</name>
 				<data>
-					<obe_name>demo</obe_name>
+					<obe_name>DemoMustacheFrontend</obe_name>
 				</data>
 			</object>
 		</res_object>
@@ -247,7 +256,7 @@ To import this module:
 		<res_lang>ANY</res_lang>
 		<res_code>HTML</res_code>
 		<res_cached>0</res_cached>
-		<res_file>resources/ObjectExternal/demo/HTML.html</res_file>
+		<res_file>resources/ObjectExternal/DemoMustacheFrontend/HTML.html</res_file>
 		<res_file_compiled/>
 		<res_image/>
 		<row_module_id.mdl_name>DemoMustache</row_module_id.mdl_name>
@@ -257,7 +266,7 @@ To import this module:
 			<object>
 				<name>ObjectExternal</name>
 				<data>
-					<obe_name>demo</obe_name>
+					<obe_name>DemoMustacheFrontend</obe_name>
 				</data>
 			</object>
 		</res_object>
@@ -267,7 +276,7 @@ To import this module:
 		<res_cached>0</res_cached>
 		<res_file/>
 		<res_file_compiled/>
-		<res_image>resources/ObjectExternal/demo/FAVICON.png</res_image>
+		<res_image>resources/ObjectExternal/DemoMustacheFrontend/FAVICON.png</res_image>
 		<row_module_id.mdl_name>DemoMustache</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -275,7 +284,7 @@ To import this module:
 			<object>
 				<name>ObjectExternal</name>
 				<data>
-					<obe_name>demo</obe_name>
+					<obe_name>DemoMustacheFrontend</obe_name>
 				</data>
 			</object>
 		</res_object>
@@ -285,7 +294,7 @@ To import this module:
 		<res_cached>0</res_cached>
 		<res_file/>
 		<res_file_compiled/>
-		<res_image>resources/ObjectExternal/demo/BANNER.jpg</res_image>
+		<res_image>resources/ObjectExternal/DemoMustacheFrontend/BANNER.jpg</res_image>
 		<row_module_id.mdl_name>DemoMustache</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -293,7 +302,7 @@ To import this module:
 			<object>
 				<name>ObjectExternal</name>
 				<data>
-					<obe_name>demo</obe_name>
+					<obe_name>DemoMustacheFrontend</obe_name>
 				</data>
 			</object>
 		</res_object>
@@ -301,8 +310,8 @@ To import this module:
 		<res_lang>ANY</res_lang>
 		<res_code>SCRIPT</res_code>
 		<res_cached>0</res_cached>
-		<res_file>resources/ObjectExternal/demo/SCRIPT.js</res_file>
-		<res_file_compiled>resources/ObjectExternal/demo/SCRIPT.min.js</res_file_compiled>
+		<res_file>resources/ObjectExternal/DemoMustacheFrontend/SCRIPT.js</res_file>
+		<res_file_compiled>resources/ObjectExternal/DemoMustacheFrontend/SCRIPT.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>DemoMustache</row_module_id.mdl_name>
 	</data>
@@ -312,7 +321,7 @@ To import this module:
 	<action>upsert</action>
 	<data>
 		<tsl_typeObject>O</tsl_typeObject>
-		<tsl_id.obe_name>demo</tsl_id.obe_name>
+		<tsl_id.obe_name>DemoMustacheFrontend</tsl_id.obe_name>
 		<tsl_lang>ANY</tsl_lang>
 		<tsl_value>Demo frontend (Mustache)</tsl_value>
 		<tsl_help/>
@@ -324,7 +333,7 @@ To import this module:
 	<action>upsert</action>
 	<data>
 		<tsl_typeShortcut>S</tsl_typeShortcut>
-		<tsl_id.shc_name>demo</tsl_id.shc_name>
+		<tsl_id.shc_name>DemoMustacheFrontend</tsl_id.shc_name>
 		<tsl_lang>ANY</tsl_lang>
 		<tsl_value>Demo frontend (Mustache)</tsl_value>
 		<row_module_id.mdl_name>DemoMustache</row_module_id.mdl_name>

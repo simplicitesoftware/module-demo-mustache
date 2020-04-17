@@ -1,4 +1,4 @@
-var demo = typeof demo !== 'undefined' ? demo : (function($) {
+var DemoMustacheFrontend = typeof DemoMustacheFrontend !== 'undefined' ? DemoMustacheFrontend : (function($) {
 	var app, prd;
 
 	/**
@@ -9,7 +9,7 @@ var demo = typeof demo !== 'undefined' ? demo : (function($) {
 	function render(params) {
 		try {
 			if (typeof Mustache === 'undefined') throw 'Mustache not available';
-			var div = $('#demo');
+			var div = $('#demomustachefrontend');
 			if (!params.pub) div.css('min-height', '1000px');
 			
 			app = app || (params.pub

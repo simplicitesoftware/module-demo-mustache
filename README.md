@@ -41,8 +41,8 @@ To import this module:
 - Click on the _Import module_ button
 
 
-`demo` external object definition
----------------------------------
+`DemoMustacheFrontend` external object definition
+-------------------------------------------------
 
 Simple demo frontend using **Mustache** templating
 
