@@ -204,7 +204,7 @@ To import this module:
 		<res_cached>0</res_cached>
 		<res_file/>
 		<res_file_compiled/>
-		<res_image>resources/Disposition/default/demomustache-module.png</res_image>
+		<res_image>resources/Disposition/default/demomustache-module.svg</res_image>
 		<row_module_id.mdl_name>DemoMustache</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -218,11 +218,11 @@ To import this module:
 		</res_object>
 		<res_type>IMG</res_type>
 		<res_lang>ANY</res_lang>
-		<res_code>demomustache-module-full</res_code>
+		<res_code>demomustache-module-screenshot</res_code>
 		<res_cached>0</res_cached>
 		<res_file/>
 		<res_file_compiled/>
-		<res_image>resources/Disposition/default/demomustache-module-full.png</res_image>
+		<res_image>resources/Disposition/default/demomustache-module-screenshot.png</res_image>
 		<row_module_id.mdl_name>DemoMustache</row_module_id.mdl_name>
 	</data>
 	<data>
