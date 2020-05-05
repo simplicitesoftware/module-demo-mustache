@@ -23,7 +23,7 @@ public class DemoMustacheFrontend extends ExternalObject {
 			setDecoration(!pub);
 			String render = getName() + ".render(" + params.toJSONObject().put("bannerURL", HTMLTool.getResourceImageURL(this, "BANNER")).put("pub", pub).toString() + ");";
 			if (pub) { // Public page version (standalone Bootstrap page)
-				BootstrapWebPage wp = new BootstrapWebPage(params.getRoot(), getDisplay(), false);
+				BootstrapWebPage wp = new BootstrapWebPage(params.getRoot(), getDisplay());
 				wp.setFavicon(HTMLTool.getResourceIconURL(this, "FAVICON"));
 				wp.appendAjax(true);
 				wp.appendMustache();
