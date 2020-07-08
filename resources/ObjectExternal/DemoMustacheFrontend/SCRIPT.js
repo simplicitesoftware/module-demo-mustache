@@ -1,4 +1,4 @@
-var DemoMustacheFrontend = typeof DemoMustacheFrontend !== 'undefined' ? DemoMustacheFrontend : (function($) {
+var DemoMustacheFrontend = DemoMustacheFrontend || (function($) {
 	var app, prd;
 
 	/**
