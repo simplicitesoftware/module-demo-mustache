@@ -334,8 +334,17 @@ To import this module:
 	<data>
 		<tsl_typeShortcut>S</tsl_typeShortcut>
 		<tsl_id.shc_name>DemoMustacheFrontend</tsl_id.shc_name>
-		<tsl_lang>ANY</tsl_lang>
+		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>Demo frontend (Mustache)</tsl_value>
+		<tsl_tooltip><![CDATA[<p>This is a simple frontend based on <strong>Mustache&reg;</strong> templating</p>]]></tsl_tooltip>
+		<row_module_id.mdl_name>DemoMustache</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeShortcut>S</tsl_typeShortcut>
+		<tsl_id.shc_name>DemoMustacheFrontend</tsl_id.shc_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Frontend démo (Mustache)</tsl_value>
+		<tsl_tooltip><![CDATA[<p>Ceci est un frontend simple bas&eacute; sur du templating <strong>Mustache&reg;</strong></p>]]></tsl_tooltip>
 		<row_module_id.mdl_name>DemoMustache</row_module_id.mdl_name>
 	</data>
 </object>
