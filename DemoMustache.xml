@@ -5,7 +5,7 @@
 	<action>upsert</action>
 	<data>
 		<mdl_name>DemoMustache</mdl_name>
-		<mdl_version>4.0</mdl_version>
+		<mdl_version>5</mdl_version>
 		<mdl_prefix>demo</mdl_prefix>
 		<mdl_url><![CDATA[{
 	"type": "git",
@@ -51,7 +51,7 @@ To import this module:
 	<data>
 		<mdk_parent_id.mdl_name>Demo</mdk_parent_id.mdl_name>
 		<row_module_id.mdl_name>DemoMustache</row_module_id.mdl_name>
-		<mdk_cascad>R</mdk_cascad>
+		<mdk_cascad>C</mdk_cascad>
 	</data>
 </object>
 <object>

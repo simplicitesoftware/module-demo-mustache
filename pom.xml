@@ -2,14 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.simplicite.modules</groupId>
-  <version>4.0-SNAPSHOT</version>
+  <version>5-SNAPSHOT</version>
   <artifactId>DemoMustache</artifactId>
   <name>DemoMustache</name>
   <description>Simplicite module: DemoMustache</description>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <simplicite.url>https://dev40.dev.simplicite.io</simplicite.url>
-    <simplicite.version>4.0.P25a-SNAPSHOT</simplicite.version>
+    <simplicite.version>5.1.0-alpha-SNAPSHOT</simplicite.version>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
     <sonar.sources>src,resources</sonar.sources>
@@ -54,7 +54,7 @@
     <dependency>
       <groupId>com.simplicite.modules</groupId>
       <artifactId>Demo</artifactId>
-      <version>4.0-SNAPSHOT</version>
+      <version>5-SNAPSHOT</version>
     </dependency>
   </dependencies>
 </project>
