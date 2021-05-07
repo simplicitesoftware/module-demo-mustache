@@ -1,4 +1,4 @@
-var DemoMustacheFrontend = DemoMustacheFrontend || (function($) {
+var DemoMustacheFrontend = (function($) {
 	var app, prd;
 
 	/**
@@ -13,7 +13,7 @@ var DemoMustacheFrontend = DemoMustacheFrontend || (function($) {
 			if (!params.pub) div.css('min-height', '1000px');
 			
 			app = app || (params.pub
-				? new Simplicite.Ajax(params.root, 'api', 'website', 'simplicite')
+				? new Simplicite.Ajax(params.root, 'api', 'website', 'simplicite') // External
 				: Simplicite.Application); // Internal
 	
 			prd = prd || app.getBusinessObject('DemoProduct');
