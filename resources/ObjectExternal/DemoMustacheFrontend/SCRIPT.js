@@ -14,7 +14,7 @@ var DemoMustacheFrontend = (function($) {
 			
 			app = app || (params.pub
 				? new Simplicite.Ajax(params.root, 'api', 'website', 'simplicite') // External
-				: Simplicite.Application); // Internal
+				: new Simplicite.Ajax(params.root, 'ui'));//Simplicite.Application); // Internal
 	
 			prd = prd || app.getBusinessObject('DemoProduct');
 			prd.bannerURL = prd.bannerURL || params.bannerURL; // Image banner URL

@@ -13,7 +13,7 @@
 		"uri": "https://github.com/simplicitesoftware/module-demo-mustache.git"
 	}
 }]]></mdl_url>
-		<mdl_lastupd>2020-02-28 22:03:14</mdl_lastupd>
+		<mdl_type>C</mdl_type>
 		<mdl_comment><![CDATA[[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=simplicite-modules-DemoProject&metric=alert_status)](https://sonarcloud.io/dashboard?id=simplicite-modules-DemoProject)
 
 ### Introduction
@@ -184,7 +184,6 @@ To import this module:
 		<res_code>mustache</res_code>
 		<res_cached>0</res_cached>
 		<res_file/>
-		<res_file_compiled/>
 		<res_image>resources/Disposition/default/mustache.png</res_image>
 		<row_module_id.mdl_name>DemoMustache</row_module_id.mdl_name>
 	</data>
@@ -202,7 +201,6 @@ To import this module:
 		<res_code>demomustache-module</res_code>
 		<res_cached>0</res_cached>
 		<res_file/>
-		<res_file_compiled/>
 		<res_image>resources/Disposition/default/demomustache-module.svg</res_image>
 		<row_module_id.mdl_name>DemoMustache</row_module_id.mdl_name>
 	</data>
@@ -220,7 +218,6 @@ To import this module:
 		<res_code>demomustache-module-screenshot</res_code>
 		<res_cached>0</res_cached>
 		<res_file/>
-		<res_file_compiled/>
 		<res_image>resources/Disposition/default/demomustache-module-screenshot.png</res_image>
 		<row_module_id.mdl_name>DemoMustache</row_module_id.mdl_name>
 	</data>
@@ -238,7 +235,6 @@ To import this module:
 		<res_code>STYLES</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectExternal/DemoMustacheFrontend/STYLES.less</res_file>
-		<res_file_compiled>resources/ObjectExternal/DemoMustacheFrontend/STYLES.min.css</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>DemoMustache</row_module_id.mdl_name>
 	</data>
@@ -256,7 +252,6 @@ To import this module:
 		<res_code>HTML</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectExternal/DemoMustacheFrontend/HTML.html</res_file>
-		<res_file_compiled/>
 		<res_image/>
 		<row_module_id.mdl_name>DemoMustache</row_module_id.mdl_name>
 	</data>
@@ -274,7 +269,6 @@ To import this module:
 		<res_code>FAVICON</res_code>
 		<res_cached>0</res_cached>
 		<res_file/>
-		<res_file_compiled/>
 		<res_image>resources/ObjectExternal/DemoMustacheFrontend/FAVICON.png</res_image>
 		<row_module_id.mdl_name>DemoMustache</row_module_id.mdl_name>
 	</data>
@@ -292,7 +286,6 @@ To import this module:
 		<res_code>BANNER</res_code>
 		<res_cached>0</res_cached>
 		<res_file/>
-		<res_file_compiled/>
 		<res_image>resources/ObjectExternal/DemoMustacheFrontend/BANNER.jpg</res_image>
 		<row_module_id.mdl_name>DemoMustache</row_module_id.mdl_name>
 	</data>
@@ -310,7 +303,6 @@ To import this module:
 		<res_code>SCRIPT</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectExternal/DemoMustacheFrontend/SCRIPT.js</res_file>
-		<res_file_compiled>resources/ObjectExternal/DemoMustacheFrontend/SCRIPT.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>DemoMustache</row_module_id.mdl_name>
 	</data>
