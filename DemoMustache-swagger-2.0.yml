@@ -112,6 +112,27 @@ definitions:
       content:
         description: Content (plain text or base64 encoded)
         type: string
+  PlaceData:
+    type: object
+    properties:
+      coord:
+        description: Geographical coordinates
+        type: string
+      address:
+        description: Address
+        type: string
+      row_id:
+        description: Row ID
+        type: string
+      label1:
+        description: 'Label #1'
+        type: string
+      label2:
+        description: 'Label #2'
+        type: string
+      label3:
+        description: 'Label #3'
+        type: string
   Error400:
     type: object
     properties:
@@ -145,6 +166,17 @@ definitions:
         type: integer
         enum:
         - 500
+  PlaceMapData:
+    type: object
+    properties:
+      places:
+        description: Places
+        type: array
+        items:
+          $ref: '#/definitions/PlaceData'
+      name:
+        description: Name
+        type: string
   Error403:
     type: object
     properties:
