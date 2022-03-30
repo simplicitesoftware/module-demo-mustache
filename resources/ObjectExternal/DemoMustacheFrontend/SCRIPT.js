@@ -1,5 +1,5 @@
-var DemoMustacheFrontend = (function($) {
-	var app, prd;
+const DemoMustacheFrontend = (function($) {
+	let app, prd;
 
 	/**
 	 * Render
@@ -9,7 +9,7 @@ var DemoMustacheFrontend = (function($) {
 	function render(params) {
 		try {
 			if (typeof Mustache === 'undefined') throw 'Mustache not available';
-			var div = $('#demomustachefrontend');
+			const div = $('#demomustachefrontend');
 			if (!params.pub) div.css('min-height', '1000px');
 			
 			app = app || (params.pub
