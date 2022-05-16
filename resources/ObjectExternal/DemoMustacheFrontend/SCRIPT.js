@@ -1,4 +1,4 @@
-const DemoMustacheFrontend = (function($) {
+var DemoMustacheFrontend = DemoMustacheFrontend || (function($) {
 	let app, prd;
 
 	/**
