@@ -1,9 +1,9 @@
 {
-    "date": "2022-09-23 09:43:31",
+    "date": "2023-04-13 11:50:23",
     "name": "DemoMustache",
     "format": "xml",
     "files": ["DemoMustache.xml"],
     "repository": {"origin": {"uri": "https://github.com/simplicitesoftware/module-demo-mustache.git"}},
     "version": "5",
-    "platform": "5.2.16"
+    "platform": "5.2.36"
 }
