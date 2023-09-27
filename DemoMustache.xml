@@ -61,7 +61,7 @@ To import this module:
 		<shc_url><![CDATA[[EXPR:HTMLPage.getPublicExternalObjectURL("DemoMustacheFrontend")]]]></shc_url>
 		<shc_target>_blank</shc_target>
 		<shc_order>131</shc_order>
-		<shc_visible>1</shc_visible>
+		<shc_visible>P;H</shc_visible>
 		<shc_icon>mustache</shc_icon>
 		<shc_keys/>
 		<row_module_id.mdl_name>DemoMustache</row_module_id.mdl_name>
