@@ -1,4 +1,4 @@
-var DemoMustacheFrontend = DemoMustacheFrontend || (function($) {
+var DemoMustacheFrontend = DemoMustacheFrontend || (() => {
 	let app, prd;
 
 	/**
@@ -16,13 +16,14 @@ var DemoMustacheFrontend = DemoMustacheFrontend || (function($) {
 				// External
 				new Simplicite.Ajax(params.root, 'api', 'website', 'simplicite') :
 				// Internal
-				new Simplicite.Ajax(params.root, 'ui')); // or Simplicite.Application);
+				$ui.getAjax()
+			);
 	
 			prd = prd || app.getBusinessObject('DemoProduct');
 			prd.bannerURL = prd.bannerURL || params.bannerURL; // Image banner URL
-			prd.toFixed = prd.toFixed || function() { return function(n, r) { return parseFloat(r(n)).toFixed(2); }; }; // Rendering function for decimal
+			prd.toFixed = prd.toFixed || function() { return (n, r) => { return parseFloat(r(n)).toFixed(2); }; }; // Rendering function for decimal
 
-			prd.search(function() {
+			prd.search(() => {
 				div.html(Mustache.render($('#demo-template').html(), prd));
 			}, null, { inlineDocs: true });
 		} catch(e) {
@@ -31,4 +32,4 @@ var DemoMustacheFrontend = DemoMustacheFrontend || (function($) {
 	}
 
 	return { render: render };	
-})(jQuery);
+})();
