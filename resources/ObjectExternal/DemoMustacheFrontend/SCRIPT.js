@@ -11,14 +11,16 @@ var DemoMustacheFrontend = DemoMustacheFrontend || (function($) {
 			if (typeof Mustache === 'undefined') throw 'Mustache not available';
 			const div = $('#demomustachefrontend');
 			if (!params.pub) div.css('min-height', '1000px');
-			
-			app = app || (params.pub
-				? new Simplicite.Ajax(params.root, 'api', 'website', 'simplicite') // External
-				: new Simplicite.Ajax(params.root, 'ui'));//Simplicite.Application); // Internal
+
+			app = app || (params.pub ?
+				// External
+				new Simplicite.Ajax(params.root, 'api', 'website', 'simplicite') :
+				// Internal
+				new Simplicite.Ajax(params.root, 'ui')); // or Simplicite.Application);
 	
 			prd = prd || app.getBusinessObject('DemoProduct');
 			prd.bannerURL = prd.bannerURL || params.bannerURL; // Image banner URL
-			prd.toFixed = prd.toFixed || function() { return function(n, r) { return parseFloat(r(n)).toFixed(2); } }; // Rendering function for decimal
+			prd.toFixed = prd.toFixed || function() { return function(n, r) { return parseFloat(r(n)).toFixed(2); }; }; // Rendering function for decimal
 
 			prd.search(function() {
 				div.html(Mustache.render($('#demo-template').html(), prd));
