@@ -1,13 +1,20 @@
+//-----------------------------------------------------------
+// Client side JavaScript for Mustache demo page
+//-----------------------------------------------------------
+
+/* global $ui */
+
 class DemoMustacheFrontend {
+
 	static render(params) {
 		try {
 			if (typeof Mustache === 'undefined') throw 'Mustache not available';
 
-			const app = params.pub ?
-				// External use (public)
-				new Simplicite.Ajax(params.root, 'uipublic') :
+			const app = typeof $ui !== 'undefined' ?
 				// Internal UI use
-				$ui.getAjax();
+				$ui.getAjax() :
+				// External use (public)
+				new Simplicite.Ajax(params.root, 'uipublic');
 
 			const prd = app.getBusinessObject('DemoProduct');
 			prd.bannerURL = prd.bannerURL || params.bannerURL; // Image banner URL
@@ -20,4 +27,5 @@ class DemoMustacheFrontend {
 			console.error('Render error: ' + e.message);
 		}
 	}
+
 }
