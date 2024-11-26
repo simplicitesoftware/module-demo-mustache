@@ -1,0 +1,6 @@
+{
+  "devDependencies": {"jshint": "latest"},
+  "name": "DemoMustache",
+  "scripts": {"jshint": "jshint --config .jshint-configuration --reporter=jslint resources"},
+  "version": "5"
+}
