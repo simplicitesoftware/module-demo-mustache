@@ -9,6 +9,7 @@
 		<mdl_prefix>demo</mdl_prefix>
 		<mdl_url><![CDATA[{
     "maven": {
+        "jshint": true,
         "checkstyle": true,
         "repositoryUrl": "https://platform.simplicite.io/5.3/maven"
     },
