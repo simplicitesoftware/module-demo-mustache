@@ -23,7 +23,7 @@ class DemoMustacheFrontend {
 			if (!params.pub) div.css('min-height', '1000px');
 			prd.search(() => div.html(Mustache.render($('#demo-template').html(), prd)), null, { inlineDocs: true });
 		} catch(e) {
-			console.error('Render error: ' + e.message);
+			$ui.error(`Render error: ${e.message}`);
 		}
 	}
 }
