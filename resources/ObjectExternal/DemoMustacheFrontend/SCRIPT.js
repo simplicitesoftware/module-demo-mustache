@@ -5,7 +5,6 @@
 /* global $ui */
 
 class DemoMustacheFrontend {
-
 	static render(params) {
 		try {
 			if (typeof Mustache === 'undefined') throw 'Mustache not available';
@@ -27,5 +26,4 @@ class DemoMustacheFrontend {
 			console.error('Render error: ' + e.message);
 		}
 	}
-
 }
