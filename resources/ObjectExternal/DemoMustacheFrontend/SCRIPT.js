@@ -7,7 +7,8 @@
 class DemoMustacheFrontend {
 	static render(params) {
 		try {
-			if (typeof Mustache === 'undefined') throw 'Mustache not available';
+			if (typeof Mustache === 'undefined')
+				throw 'Mustache not available';
 
 			const app = typeof $ui !== 'undefined' ?
 				// Internal UI use
@@ -23,7 +24,7 @@ class DemoMustacheFrontend {
 			if (!params.pub) div.css('min-height', '1000px');
 			prd.search(() => div.html(Mustache.render($('#demo-template').html(), prd)), null, { inlineDocs: true });
 		} catch(e) {
-			$ui.error(`Render error: ${e.message}`);
+			$('#demomustachefrontend').text(`Error: ${e.message}`);
 		}
 	}
 }
