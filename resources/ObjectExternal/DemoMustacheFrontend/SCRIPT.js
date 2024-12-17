@@ -4,8 +4,8 @@
 
 /* global Mustache */
 
-class DemoMustacheFrontend { // eslint-disable-line no-unused-vars
-	static render(params) {
+var DemoMustacheFrontend = DemoMustacheFrontend || (() => {
+	function render(params) {
 		try {
 			if (typeof Mustache === 'undefined')
 				throw 'Mustache not available';
@@ -27,4 +27,6 @@ class DemoMustacheFrontend { // eslint-disable-line no-unused-vars
 			$('#demomustachefrontend').text(`Error: ${e.message}`);
 		}
 	}
-}
+
+	return { render: render };
+})();
