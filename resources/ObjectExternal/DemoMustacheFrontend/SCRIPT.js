@@ -2,9 +2,9 @@
 // Client side JavaScript for Mustache demo page
 //-----------------------------------------------------------
 
-/* global $ui */
+/* global Mustache */
 
-class DemoMustacheFrontend {
+class DemoMustacheFrontend { // eslint-disable-line no-unused-vars
 	static render(params) {
 		try {
 			if (typeof Mustache === 'undefined')
