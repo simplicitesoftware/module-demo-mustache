@@ -17,6 +17,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
     <simplicite.version>5.3-SNAPSHOT</simplicite.version>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
+    <skipTests>true</skipTests>
     <sonar.projectKey>simplicite-modules-DemoMustache</sonar.projectKey>
     <sonar.projectName>DemoMustache</sonar.projectName>
     <sonar.projectVersion>5</sonar.projectVersion>
@@ -39,7 +40,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
-        <version>3.4.2</version>
+        <version>3.5.0</version>
         <configuration>
           <excludes>
             <exclude>.gitkeep</exclude>
@@ -53,7 +54,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.11.1</version>
+        <version>3.12.0</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -67,7 +68,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
           <dependency>
             <groupId>com.puppycrawl.tools</groupId>
             <artifactId>checkstyle</artifactId>
-            <version>10.19.0</version>
+            <version>10.26.1</version>
           </dependency>
         </dependencies>
         <executions>
@@ -83,7 +84,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
-        <version>3.5.0</version>
+        <version>3.5.1</version>
         <executions>
           <execution>
             <id>npm-install</id>

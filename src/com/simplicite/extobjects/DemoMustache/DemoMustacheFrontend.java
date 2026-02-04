@@ -12,10 +12,6 @@ import com.simplicite.webapp.web.BootstrapWebPage;
 public class DemoMustacheFrontend extends ExternalObject {
 	private static final long serialVersionUID = 1L;
 
-	/**
-	 * Display method
-	 * @param params Request parameters
-	 */
 	@Override
 	public Object display(Parameters params) {
 		try {

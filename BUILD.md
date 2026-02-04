@@ -1,4 +1,4 @@
-![](https://docs.simplicite.io//logos/logo250.png)
+![](https://platform.simplicite.io//logos/logo250.png)
 * * *
 
 Apache Maven
@@ -8,7 +8,14 @@ Build
 -----
 
 ``` text
-mvn -U -DskipTests=true clean package
+mvn clean package
+```
+
+Javadoc
+-------
+
+``` text
+mvn javadoc:javadoc
 ```
 
 Sonar analysis
