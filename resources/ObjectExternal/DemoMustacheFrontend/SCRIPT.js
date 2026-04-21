@@ -18,7 +18,7 @@ var DemoMustacheFrontend = DemoMustacheFrontend || (() => {
 
 			const prd = app.getBusinessObject('DemoProduct');
 			prd.bannerURL = prd.bannerURL || params.bannerURL; // Image banner URL
-			prd.toFixed = prd.toFixed || function() { return (n, r) => { return parseFloat(r(n)).toFixed(2); }; }; // Rendering function for decimal
+			prd.toFixed = prd.toFixed || function() { return (n, r) => { return Number.parseFloat(r(n)).toFixed(2); }; }; // Rendering function for decimal
 
 			const div = $('#demomustachefrontend');
 			if (!params.pub) div.css('min-height', '1000px');
